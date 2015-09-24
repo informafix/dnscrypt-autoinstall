@@ -150,7 +150,7 @@ EOF
 
 import_gpgkey() {
 	echo "Importing key with ID: $1"
-	gpg --keyserver keys.gnupg.net --recv-keys "$1"
+	gpg --keyserver pgp.mit.edu --recv-keys "$1"
 
 	if [ $? -ne 0 ]; then
 		echo "Error importing key $1" 
@@ -276,7 +276,7 @@ EOF
 		pushd "$TMPDIR"
 		
 		# Import GPG key to verify files
-		import_gpgkey 54A2B8892CC3D6A597B92B6C210627AABA709FE1
+		import_gpgkey 0x210627aaba709fe1
 		
 		# Is libsodium installed?
 		if [ "$LSODIUMINST" == "false" ]; then
