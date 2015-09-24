@@ -66,7 +66,7 @@ config_interface() {
 	echo "10) OkTurtles     (Georgia, USA - no logs)"
 	echo "11) Soltysiak.com (Europe - no logs, DNSSEC)"
 	echo "12) OpenNIC      (Europe - no logs, DNSSEC)"
-	echo "13) D0wn.biz     (France - no logs)"
+	echo "13) D0wn.biz     (France - no logs, DNSSEC)"
 	echo ""
 	read -p "Select an option [1-13]: " OPTION
 	case $OPTION in
