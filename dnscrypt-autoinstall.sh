@@ -29,7 +29,7 @@ DNSCRYPTINST=false
 DNSCRYPTCONF=false
 LSODIUMURL="https://download.libsodium.org/libsodium/releases"
 DNSCRYPTURL="http://download.dnscrypt.org/dnscrypt-proxy"
-INITURL="https://raw.github.com/simonclausen/dnscrypt-autoinstall/master/init-scripts"
+INITURL="https://raw.githubusercontent.com/informafix/dnscrypt-autoinstall/master/init-scripts"
 LSODIUMVER=$(curl --retry 5 -L $LSODIUMURL | awk -F'(.tar|libsodium-)' '/libsodium-1/ {v=$2}; END {print v}')
 DNSCRYPTVER=$(curl --retry 5 -L $DNSCRYPTURL | awk -F'(.tar|proxy-)' '/proxy-1/ {v=$2}; END {print v}')
 WHICHRESOLVER=dnscrypteu
@@ -65,8 +65,10 @@ config_interface() {
 	echo "9) OpenNIC       (Seattle, USA - no logs)"
 	echo "10) OkTurtles     (Georgia, USA - no logs)"
 	echo "11) Soltysiak.com (Europe - no logs, DNSSEC)"
+	echo "12) OpenNIC      (Europe - no logs, DNSSEC)"
+	echo "13) D0wn.biz     (France - no logs)"
 	echo ""
-	read -p "Select an option [1-11]: " OPTION
+	read -p "Select an option [1-13]: " OPTION
 	case $OPTION in
 		1)
 		WHICHRESOLVER=off
@@ -100,6 +102,12 @@ config_interface() {
 		;;
 		11)
 		WHICHRESOLVER=soltysiak
+		;;
+		12)
+		WHICHRESOLVER=opennicfr1
+		;;
+		13)
+		WHICHRESOLVER=d0wnbizfr1
 		;;
 	esac
 	return 0
