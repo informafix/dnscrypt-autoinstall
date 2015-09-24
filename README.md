@@ -41,6 +41,7 @@ Provider | Location | Note
 [OpenNIC](https://www.opennicproject.org/) | Japan | No logs
 [OpenNIC](https://www.opennicproject.org/) | Europe | No logs
 [Soltysiak.com](http://dc1.soltysiak.com/) | Europe | No logs, DNSSEC
+[d0wn.biz](https://dns.d0wn.biz/) | France | No logs
 
 ## Troubleshooting
 If the install fails at a particular stage and the script mentions DNSCrypt is already configured, use the `forcedel` argument to force an uninstallation:
