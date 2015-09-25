@@ -12,7 +12,7 @@ This script will automatically and securely set up DNSCrypt as a background serv
 ### Debian, Ubuntu, Linux Mint:
 
 ```
-wget https://raw.github.com/simonclausen/dnscrypt-autoinstall/master/dnscrypt-autoinstall.sh
+wget https://raw.github.com/informafix/dnscrypt-autoinstall/master/dnscrypt-autoinstall.sh
 chmod +x dnscrypt-autoinstall.sh
 ./dnscrypt-autoinstall.sh
 ```
@@ -20,7 +20,7 @@ chmod +x dnscrypt-autoinstall.sh
 ### Fedora, CentOS, Scientific Linux:
 
 ```
-wget https://raw.github.com/simonclausen/dnscrypt-autoinstall/master/dnscrypt-autoinstall-redhat.sh
+wget https://raw.github.com/informafix/dnscrypt-autoinstall/master/dnscrypt-autoinstall-redhat.sh
 chmod +x dnscrypt-autoinstall-redhat.sh
 ./dnscrypt-autoinstall-redhat.sh
 ```
